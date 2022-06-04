@@ -6,14 +6,18 @@ import { createTheme } from "@mui/material";
 
 // color palette
 export const colors = {
-  dark_grey: "#272525",
-  mid_gray: "#26282F",
-  light_gray: "#7B7C80",
+  green: "#6CA12B",
+  dark_grey: "#262626",
+  mid_gray: "#8F8E8E",
+  light_gray: "##C5C5C5",
 };
 export const theme = createTheme({
   palette: {
     primary: {
       main: colors.dark_grey,
+    },
+    secondary: {
+      main: colors.green,
     },
   },
 });
