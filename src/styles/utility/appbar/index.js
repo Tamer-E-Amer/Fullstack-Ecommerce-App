@@ -14,6 +14,7 @@ export const AppbarWrapper = styled(Box)(() => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
+  padding: 10,
 }));
 
 // search components
@@ -25,6 +26,9 @@ export const SearchInputWrapper = styled(Box)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
+  [theme.breakpoints.down("lg")]: {
+    width: 400,
+  },
   [theme.breakpoints.down("md")]: {
     width: 300,
   },

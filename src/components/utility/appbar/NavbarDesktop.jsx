@@ -12,20 +12,13 @@ import {
   SearchButton,
 } from "../../../styles/utility/appbar";
 // mui components
-import {
-  Button,
-  Container,
-  IconButton,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Container, IconButton, Stack, Typography } from "@mui/material";
 // mui icons
 import SearchIcon from "@mui/icons-material/Search";
 
 // imgs
 import logo from "../../../assets/imgs/logo.png";
-import { colors } from "../../../themes/theme";
-const Appbar = () => {
+const NavbarDesktop = () => {
   return (
     <>
       <AppbarWrapper>
@@ -55,4 +48,4 @@ const Appbar = () => {
   );
 };
 
-export default Appbar;
+export default NavbarDesktop;

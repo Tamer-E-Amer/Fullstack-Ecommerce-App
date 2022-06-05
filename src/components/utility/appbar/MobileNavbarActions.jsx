@@ -4,18 +4,20 @@
 
 import React from "react";
 // mui components
-import { Stack, Button, Typography, Badge } from "@mui/material";
+import { Stack, IconButton, Badge } from "@mui/material";
 // mui icons
 import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 // colors
 import { colors } from "../../../themes/theme";
+// icon
+import MenuIcon from "@mui/icons-material/Menu";
 const NavbarActions = () => {
   return (
     <Stack
       alignItems={"center"}
       justifyContent="space-between"
       direction="row"
-      spacing={2}
+      spacing={1}
     >
       {/* shopping car */}
       <Badge badgeContent={2} color="error">
@@ -24,20 +26,10 @@ const NavbarActions = () => {
           sx={{ color: `${colors.mid_gray}` }}
         />
       </Badge>
-      {/* login */}
-      <Typography color={colors.mid_gray} sx={{ cursor: "pointer" }}>
-        login
-      </Typography>
-      {/* sign up */}
-      <Button
-        variant="contained"
-        size="large"
-        color="secondary"
-        sx={{ textTransform: "none", borderRadius: 0 }}
-      >
-        {" "}
-        Sign up
-      </Button>
+      {/* menu icon */}
+      <IconButton>
+        <MenuIcon fontSize="large" sx={{ color: "#fff" }} />
+      </IconButton>
     </Stack>
   );
 };

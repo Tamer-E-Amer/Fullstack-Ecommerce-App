@@ -3,11 +3,11 @@
  */
 import React from "react";
 // application components
-import Appbar from "../../components/utility/appbar/Appbar";
+import Navbar from "../../components/utility/appbar";
 const Home = () => {
   return (
     <>
-      <Appbar />
+      <Navbar />
     </>
   );
 };
