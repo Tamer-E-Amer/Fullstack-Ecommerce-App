@@ -37,13 +37,11 @@ export const Description = styled(Typography)(() => ({
 }));
 
 // AdvantagesWrapper
-export const AdvantagesWrapper = styled(Box)(({ theme }) => ({
-  // padding: "1rem",
+export const AdvantagesWrapper = styled(Box)(() => ({
   display: "flex",
   flexWrap: "wrap",
   alignItems: "center",
   justifyContent: "center",
   padding: "1rem",
   flexDirection: "row",
-  [theme.breakpoints.down("")]: {},
 }));
