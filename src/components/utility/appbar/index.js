@@ -12,17 +12,8 @@ import NavbarDesktop from "./NavbarDesktop";
 const Navbar = () => {
   const theme = useTheme();
   const isMobileScreen = useMediaQuery(theme.breakpoints.down("sm"));
-  const isExrasmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
 
-  return (
-    <>
-      {isMobileScreen ? (
-        <NavbarMobile isExrasmallScreen={isExrasmallScreen} />
-      ) : (
-        <NavbarDesktop />
-      )}
-    </>
-  );
+  return <>{isMobileScreen ? <NavbarMobile /> : <NavbarDesktop />}</>;
 };
 
 export default Navbar;
