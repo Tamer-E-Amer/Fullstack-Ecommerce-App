@@ -6,12 +6,14 @@ import React from "react";
 import Navbar from "../../components/utility/appbar";
 import WelcomeBanner from "../../components/home/welcomeBanner/WelcomeBanner";
 import AdvantagesContainer from "../../components/home/advantages/advantageCard/AdvantagesContainer";
+import HotDeals from '../../components/home/hotDeals/HotDeals'
 const Home = () => {
   return (
     <>
       <Navbar />
       <WelcomeBanner />
       <AdvantagesContainer />
+      <HotDeals/>
     </>
   );
 };
