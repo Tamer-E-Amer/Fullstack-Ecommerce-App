@@ -44,4 +44,5 @@ export const AdvantagesWrapper = styled(Box)(() => ({
   justifyContent: "center",
   padding: "1rem",
   flexDirection: "row",
+  height: "auto",
 }));

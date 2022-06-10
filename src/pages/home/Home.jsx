@@ -6,14 +6,26 @@ import React from "react";
 import Navbar from "../../components/utility/appbar";
 import WelcomeBanner from "../../components/home/welcomeBanner/WelcomeBanner";
 import AdvantagesContainer from "../../components/home/advantages/advantageCard/AdvantagesContainer";
-import HotDeals from '../../components/home/hotDeals/HotDeals'
+import HotDeals from "../../components/home/hotDeals/HotDeals";
+import { Container, Stack } from "@mui/material";
+import { colors } from "../../themes/theme";
+import { Box } from "@mui/system";
+import CategoryContainer from "../../components/home/categoryContainer/CategoryContainer";
 const Home = () => {
   return (
     <>
       <Navbar />
       <WelcomeBanner />
-      <AdvantagesContainer />
-      <HotDeals/>
+      {/* section that contains advantage, hotdeals and category container */}
+      <Box sx={{ backgroundColor: colors.light_gray, height: "auto" }}>
+        <Container>
+          <Stack>
+            <AdvantagesContainer />
+            <HotDeals />
+            <CategoryContainer />
+          </Stack>
+        </Container>
+      </Box>
     </>
   );
 };
