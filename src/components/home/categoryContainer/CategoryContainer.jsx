@@ -3,14 +3,19 @@
  */
 
 import React from "react";
+import { useTheme } from "@mui/material/styles";
+import { useMediaQuery } from "@mui/material";
 import SectionTitle from "../../utility/sectionTitle/SectionTitle";
-import CategorySlider from "./CategorySlider";
+import CategorySwiper from "./CategorySwiper";
 
 const CategoryContainer = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <div>
       <SectionTitle title="Categories" />
-      <CategorySlider />
+      <CategorySwiper isMobile={isMobile} isTablet={isTablet} />
     </div>
   );
 };

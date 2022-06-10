@@ -21,4 +21,9 @@ export const categoryData = [
     title: "Nuts",
     img: category3,
   },
+  {
+    id: 4,
+    title: "Nuts",
+    img: category3,
+  },
 ];

@@ -7,10 +7,11 @@ import Navbar from "../../components/utility/appbar";
 import WelcomeBanner from "../../components/home/welcomeBanner/WelcomeBanner";
 import AdvantagesContainer from "../../components/home/advantages/advantageCard/AdvantagesContainer";
 import HotDeals from "../../components/home/hotDeals/HotDeals";
-import { Container, Stack } from "@mui/material";
+import { Container, Stack, useMediaQuery } from "@mui/material";
 import { colors } from "../../themes/theme";
 import { Box } from "@mui/system";
 import CategoryContainer from "../../components/home/categoryContainer/CategoryContainer";
+import { useTheme } from "@mui/material/styles";
 const Home = () => {
   return (
     <>
