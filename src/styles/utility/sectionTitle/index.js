@@ -17,12 +17,12 @@ export const SectionBar = styled(Box)(() => ({
   justifyContent: "center",
 }));
 
-export const TitleText = styled(Typography)(() => ({
+export const TitleText = styled(Typography)(({ bgColor }) => ({
   top: "50%",
   right: "50%",
   height: 40,
   width: 180,
-  backgroundColor: colors.light_gray,
+  backgroundColor: bgColor ? bgColor : colors.light_gray,
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

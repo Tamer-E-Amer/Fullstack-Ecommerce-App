@@ -21,8 +21,8 @@ const BestSeller = () => {
   return (
     <>
       <Container>
-        <SectionTitle title={"Best Seller"} />
-        <Grid container gap={3}>
+        <SectionTitle title={"Best Seller"} bgColor="#fff" />
+        <Grid container gap={3} justifyContent={"center"} alignItems={"center"}>
           {bestSellerData}
         </Grid>
       </Container>
