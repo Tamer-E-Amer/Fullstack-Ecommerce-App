@@ -27,7 +27,7 @@ const CategorySwiper = ({ isMobile, isTablet }) => {
           justifyContent: "center",
         }}
       >
-        <CategoryCard key={cat.id} data={cat} />;
+        <CategoryCard key={cat.id} data={cat} />
       </SwiperSlide>
     );
   });
@@ -37,7 +37,7 @@ const CategorySwiper = ({ isMobile, isTablet }) => {
         navigation={true}
         modules={[Navigation]}
         className="mySwiper"
-        spaceBetween={50}
+        spaceBetween={20}
         slidesPerView={isMobile ? 1 : isTablet ? 2 : 3}
         style={{
           padding: "2rem",

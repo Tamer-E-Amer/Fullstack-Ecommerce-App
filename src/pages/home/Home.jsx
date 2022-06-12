@@ -12,6 +12,7 @@ import { colors } from "../../themes/theme";
 import { Box } from "@mui/system";
 import CategoryContainer from "../../components/home/categoryContainer/CategoryContainer";
 import { useTheme } from "@mui/material/styles";
+import BestSeller from "../../components/home/bestSeller/BestSeller";
 const Home = () => {
   return (
     <>
@@ -26,6 +27,10 @@ const Home = () => {
             <CategoryContainer />
           </Stack>
         </Container>
+      </Box>
+      {/* best seller section */}
+      <Box>
+        <BestSeller />
       </Box>
     </>
   );
