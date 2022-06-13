@@ -7,11 +7,13 @@ import React from "react";
 
 // styled components
 import { SectionBar, TitleText } from "../../../styles/utility/sectionTitle";
-const SectionTitle = ({ title, bgColor }) => {
+const SectionTitle = ({ title, bgColor, width }) => {
   return (
     <>
       <SectionBar>
-        <TitleText bgColor={bgColor}>{title}</TitleText>
+        <TitleText bgColor={bgColor} width={width}>
+          {title}
+        </TitleText>
       </SectionBar>
     </>
   );
