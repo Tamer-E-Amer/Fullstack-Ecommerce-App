@@ -71,11 +71,11 @@ export const bestSeller = [
     forWhat: "for 1.5kg",
     aboutProduct: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
   },
-  {
-    id: 9,
-    productPicture: bestseller9,
-    price: "2$",
-    forWhat: "for 1.5kg",
-    aboutProduct: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-  },
+  // {
+  //   id: 9,
+  //   productPicture: bestseller9,
+  //   price: "2$",
+  //   forWhat: "for 1.5kg",
+  //   aboutProduct: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+  // },
 ];

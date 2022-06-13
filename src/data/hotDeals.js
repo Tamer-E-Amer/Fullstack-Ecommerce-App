@@ -6,6 +6,7 @@
 import deal1 from '../assets/imgs/deal1.png';
 import deal2 from '../assets/imgs/deal2.png';
 import deal3 from '../assets/imgs/deal3.png';
+import bestseller1 from "../assets/imgs/bestseller1.png";
 
 // data
  export const hotDealsData = [
@@ -33,4 +34,11 @@ import deal3 from '../assets/imgs/deal3.png';
          aboutProduct:"Lorem ipsum dolor sit amet consectetur adipisicing elit"
 
      },
+     {
+        id: 4,
+        productPicture: bestseller1,
+        price: "2$",
+        forWhat: "for 1.5kg",
+        aboutProduct: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      },
  ]
