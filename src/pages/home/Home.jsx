@@ -38,7 +38,7 @@ const Home = () => {
         <Brands />
       </Box>
       {/* recently added section */}
-      <Box p={2} sx={{ backgroundColor: colors.light_gray, height: 400 }}>
+      <Box p={2} sx={{ backgroundColor: colors.light_gray, height: "auto" }}>
         <Container>
           <RecentlyAdded />
         </Container>
