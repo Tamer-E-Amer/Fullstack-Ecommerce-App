@@ -9,6 +9,7 @@ import AdvantagesContainer from "../../components/home/advantages/advantageCard/
 import HotDeals from "../../components/home/hotDeals/HotDeals";
 import Brands from "../../components/home/brands/Brands";
 import RecentlyAdded from "../../components/home/recentlyAdded/RecentlyAdded";
+import Footer from '../../components/utility/footer/Footer'
 // mui comoponents
 import { Container, Stack, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
@@ -23,7 +24,7 @@ const Home = () => {
       <Navbar />
       <WelcomeBanner />
       {/* section that contains advantage, hotdeals and category container */}
-      <Box sx={{ backgroundColor: colors.light_gray, height: "auto" }}>
+      <Box sx={{ backgroundColor: colors.light_gray, height: "auto"}}>
         <Container>
           <Stack>
             <AdvantagesContainer />
@@ -43,6 +44,8 @@ const Home = () => {
           <RecentlyAdded />
         </Container>
       </Box>
+      {/*  footer */}
+      <Footer/>
     </>
   );
 };
