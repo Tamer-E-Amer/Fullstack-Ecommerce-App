@@ -7,13 +7,13 @@ import { colors } from "../../../themes/theme";
 
 // advantage card
 export const AdvantageCardWrapper = styled(Paper)(() => ({
-  width: 284,
-  height: 153,
+  width: 250,
+  height: 145,
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
   padding: "1rem",
-  margin: "1rem",
+  margin: "0.5rem",
 }));
 
 // advantage text wrapper
