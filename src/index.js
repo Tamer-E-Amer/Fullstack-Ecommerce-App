@@ -7,6 +7,7 @@ import App from "./App";
 import { theme } from "./themes/theme";
 ReactDom.render(
   <ThemeProvider theme={theme}>
+    
     <App />
   </ThemeProvider>,
 

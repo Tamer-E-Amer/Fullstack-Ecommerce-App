@@ -9,6 +9,7 @@ import { Stack, Button, Typography, Badge } from "@mui/material";
 import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 // colors
 import { colors } from "../../../themes/theme";
+import { Link } from "react-router-dom";
 const NavbarActions = () => {
   return (
     <Stack
@@ -25,9 +26,11 @@ const NavbarActions = () => {
         />
       </Badge>
       {/* login */}
-      <Typography color={colors.mid_gray} sx={{ cursor: "pointer" }}>
+      <Link to="/login" style={{textDecoration:"none"}}>
+      <Typography color={colors.mid_gray} sx={{ cursor: "pointer"}}>
         login
       </Typography>
+      </Link>
       {/* sign up */}
       <Button
         variant="contained"
