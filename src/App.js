@@ -5,7 +5,7 @@
 import { CssBaseline } from "@mui/material";
 import React from "react";
 // pages
-import { Home, Login, Register } from "./pages";
+import { Home, Login, Register, AllProducts } from "./pages";
 //css
 import "./app.css";
 // react router
@@ -20,6 +20,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/allproducts" element={<AllProducts />} />
         </Routes>
       </Router>
     </div>
