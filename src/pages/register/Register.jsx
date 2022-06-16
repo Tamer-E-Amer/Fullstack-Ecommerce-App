@@ -1,20 +1,20 @@
 /**
- * @description login page
+ * @description register page
  */
 
 import React from "react";
-import LoginFormContainer from "../../components/login/loginFormContainer/LoginFormContainer";
+// app components
 import Navbar from "../../components/utility/appbar";
 import Footer from "../../components/utility/footer/Footer";
-
-const Login = () => {
+import RegisterFormContainer from "../../components/register/RegisterFormContainer";
+const Register = () => {
   return (
     <>
       <Navbar />
-      <LoginFormContainer />
+      <RegisterFormContainer />
       <Footer />
     </>
   );
 };
 
-export default Login;
+export default Register;

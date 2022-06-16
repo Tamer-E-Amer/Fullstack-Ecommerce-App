@@ -26,21 +26,23 @@ const NavbarActions = () => {
         />
       </Badge>
       {/* login */}
-      <Link to="/login" style={{textDecoration:"none"}}>
-      <Typography color={colors.mid_gray} sx={{ cursor: "pointer"}}>
-        login
-      </Typography>
+      <Link to="/login" style={{ textDecoration: "none" }}>
+        <Typography color={colors.mid_gray} sx={{ cursor: "pointer" }}>
+          login
+        </Typography>
       </Link>
       {/* sign up */}
-      <Button
-        variant="contained"
-        size="large"
-        color="secondary"
-        sx={{ textTransform: "none", borderRadius: 0 }}
-      >
-        {" "}
-        Sign up
-      </Button>
+      <Link to="/register" style={{ textDecoration: "none" }}>
+        <Button
+          variant="contained"
+          size="large"
+          color="secondary"
+          sx={{ textTransform: "none", borderRadius: 0 }}
+        >
+          {" "}
+          Sign up
+        </Button>
+      </Link>
     </Stack>
   );
 };
