@@ -25,7 +25,7 @@ const FooterUsefulLinks = () => {
       <Stack
         direction="row"
         aligntems="center"
-        justifyContents="space-between"
+        justifyContent="space-between"
         spacing={1}
         sx={{
           "&:hover": {
