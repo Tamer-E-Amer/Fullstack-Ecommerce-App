@@ -12,9 +12,9 @@ import { Box, Container } from "@mui/material";
 const Brands = () => {
   return (
     <Container>
-      <SectionTitle title="Brands" bgColor="#fff" />
-      <Box >
-        <BrandSwiper/>
+      <SectionTitle title="Brands" bg="#fff" />
+      <Box>
+        <BrandSwiper />
       </Box>
     </Container>
   );

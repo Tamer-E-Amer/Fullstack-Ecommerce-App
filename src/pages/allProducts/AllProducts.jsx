@@ -10,13 +10,20 @@ import PageHeader from "../../components/utility/pageHeader/PageHeader";
 import headerImg1 from "../../assets/imgs/headerImg1.png";
 import ProductsCountSortViewBar from "../../components/allProducts/productsCountSortViewBar/ProductsCountSortViewBar";
 import FilterProductsSideBar from "../../components/allProducts/filterProductsSideBar/FilterProductsSideBar";
+import { Container, Stack, Box } from "@mui/material";
+import ProductList from "../../components/allProducts/productList/ProductList";
 const AllProducts = () => {
   return (
     <>
       <Navbar />
       <PageHeader title="Best seller Products" img={headerImg1} />
-      <ProductsCountSortViewBar />
-      <FilterProductsSideBar />
+      <Container>
+        <ProductsCountSortViewBar />
+        <Stack direction={{ md: "row", xs: "column" }}>
+          <FilterProductsSideBar />
+          <ProductList />
+        </Stack>
+      </Container>
       <Footer />
     </>
   );
