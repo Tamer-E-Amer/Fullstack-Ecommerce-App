@@ -10,13 +10,16 @@ import { Button, Grid, Stack } from "@mui/material";
 // recently added product data
 import { recentlyAddedData } from "../../../data/recentlyAdded";
 import RecentlyAddedCard from "./RecentlyAddedCard";
-
+//router dom
+import { Link } from "react-router-dom";
 const RecentlyAdded = () => {
   // map through recently added data
   const recentlyAddedCards = recentlyAddedData.map((card) => {
     return (
       <Grid item key={card.id}>
-        <RecentlyAddedCard cardData={card} />
+        <Link to="/productdetails/1111" style={{ textDecoration: "none" }}>
+          <RecentlyAddedCard cardData={card} />
+        </Link>
       </Grid>
     );
   });
@@ -27,13 +30,15 @@ const RecentlyAdded = () => {
         {recentlyAddedCards}
       </Grid>
       <Stack justifyContent="center" alignItems="center" m={5}>
-        <Button
-          variant="contained"
-          color="secondary"
-          sx={{ width: 240, height: 50, color: "#fff" }}
-        >
-          More...
-        </Button>
+        <Link to="/allproducts" style={{ textDecoration: "none" }}>
+          <Button
+            variant="contained"
+            color="secondary"
+            sx={{ width: 240, height: 50, color: "#fff" }}
+          >
+            More...
+          </Button>
+        </Link>
       </Stack>
     </>
   );

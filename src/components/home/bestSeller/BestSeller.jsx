@@ -11,12 +11,16 @@ import { bestSeller } from "../../../data/bestSeller";
 import ProductCard from "../../utility/products/ProductCard";
 // icons
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+// router-dom
+import { Link } from "react-router-dom";
 const BestSeller = () => {
   // map throught best seller
   const bestSellerData = bestSeller.map((bs) => {
     return (
       <Grid item key={bs.id}>
-        <ProductCard productData={bs} />
+        <Link to="/productdetails/11111" style={{ textDecoration: "none" }}>
+          <ProductCard productData={bs} />
+        </Link>
       </Grid>
     );
   });
@@ -28,14 +32,16 @@ const BestSeller = () => {
           {bestSellerData}
         </Grid>
         <Stack justifyContent="center" alignItems="center" m={3}>
-          <Button
-            variant="contained"
-            color="secondary"
-            sx={{ width: 240, height: 50, textDecoration: "none" }}
-            startIcon={<ShoppingCartIcon />}
-          >
-            More...
-          </Button>
+          <Link to="/allproducts" style={{ textDecoration: "none" }}>
+            <Button
+              variant="contained"
+              color="secondary"
+              sx={{ width: 240, height: 50, textDecoration: "none" }}
+              startIcon={<ShoppingCartIcon />}
+            >
+              More...
+            </Button>
+          </Link>
         </Stack>
       </Container>
     </>
