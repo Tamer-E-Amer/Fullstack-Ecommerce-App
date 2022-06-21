@@ -100,7 +100,7 @@ const ProductDescription = () => {
           </Stack>
           {/* available in stock */}
           <Typography variant="h6" color="secondary">
-            Availabein stock
+            Availabe in stock
           </Typography>
           {/* color */}
           <Box
@@ -134,7 +134,7 @@ const ProductDescription = () => {
             <Button
               variant="outlined"
               color="secondary"
-              sx={{ width: 40, height: 40, borderRadius: 0 }}
+              sx={{ width: 40, height: 40, borderRadius: 0, fontSize: 30 }}
             >
               -
             </Button>
@@ -169,7 +169,7 @@ const ProductDescription = () => {
             <Button
               variant="outlined"
               color="secondary"
-              sx={{ width: 40, height: 40, borderRadius: 0 }}
+              sx={{ width: 40, height: 40, borderRadius: 0, fontSize: 30 }}
             >
               +
             </Button>

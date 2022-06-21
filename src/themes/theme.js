@@ -7,6 +7,7 @@ import { createTheme } from "@mui/material";
 // color palette
 export const colors = {
   green: "#6CA12B",
+  yellow: "#faaf00",
   dark_grey: "#262626",
   mid_gray: "#8F8E8E",
   light_gray: "#C5C5C5",
