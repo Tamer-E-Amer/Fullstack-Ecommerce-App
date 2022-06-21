@@ -77,7 +77,7 @@ const ProductReviewsAndSuggestions = () => {
               variant="contained"
               color="secondary"
               sx={{
-                width: { xs: "50%", md: "25%" },
+                width: { xs: "65%", md: "25%" },
                 height: { xs: 40, md: 40 },
                 borderRadius: 0,
                 mb: 3,

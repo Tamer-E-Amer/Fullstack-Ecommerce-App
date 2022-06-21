@@ -22,7 +22,12 @@ const ProductDescription = () => {
   const [quantity, setQuantity] = React.useState(1);
   return (
     <>
-      <Stack mt={5} direction={"row"} spacing={5}>
+      <Stack
+        mt={5}
+        direction={{ xs: "column", sm: "row", md: "row" }}
+        spacing={5}
+        alignItems="center"
+      >
         {/* product imag */}
         <Box spacing={1}>
           <img
@@ -130,75 +135,85 @@ const ProductDescription = () => {
           </Typography>
 
           {/* action buttons */}
-          <Stack direction="row" spacing={1} mt={3} mb={3}>
-            <Button
-              variant="outlined"
-              color="secondary"
-              sx={{ width: 40, height: 40, borderRadius: 0, fontSize: 30 }}
-            >
-              -
-            </Button>
-            {/* quantity */}
-            <Box
-              display="flex"
-              alignItems="center"
-              sx={{ border: `0.5px solid ${colors.light_gray}`, height: 40 }}
-              width={80}
-              px={2}
-            >
-              <input
-                type="tel"
-                value={quantity}
-                name="quantity"
-                onChange={(e) => {
-                  setQuantity(e.target.value);
-                }}
-                style={{
-                  outline: "none",
-                  border: "none",
-                  width: "100%",
-                  height: 30,
-                  fontSize: 16,
-                  color: `${colors.mid_gray}`,
-                  textAlign: "center",
-                }}
-                max={100}
-                min={1}
-              />
-            </Box>
-            <Button
-              variant="outlined"
-              color="secondary"
-              sx={{ width: 40, height: 40, borderRadius: 0, fontSize: 30 }}
-            >
-              +
-            </Button>
+          <Stack
+            direction={{ xs: "column", md: "row" }}
+            spacing={1}
+            mt={3}
+            mb={3}
+            alignItems="center"
+          >
+            <Stack spacing={1} direction="row">
+              <Button
+                variant="outlined"
+                color="secondary"
+                sx={{ width: 40, height: 40, borderRadius: 0, fontSize: 30 }}
+              >
+                -
+              </Button>
+              {/* quantity */}
+              <Box
+                display="flex"
+                alignItems="center"
+                sx={{ border: `0.5px solid ${colors.light_gray}`, height: 40 }}
+                width={80}
+                px={2}
+              >
+                <input
+                  type="tel"
+                  value={quantity}
+                  name="quantity"
+                  onChange={(e) => {
+                    setQuantity(e.target.value);
+                  }}
+                  style={{
+                    outline: "none",
+                    border: "none",
+                    width: "100%",
+                    height: 30,
+                    fontSize: 16,
+                    color: `${colors.mid_gray}`,
+                    textAlign: "center",
+                  }}
+                  max={100}
+                  min={1}
+                />
+              </Box>
 
-            <Button
-              variant="contained"
-              color="secondary"
-              sx={{ width: 180, height: 40, borderRadius: 0 }}
-              startIcon={<ShoppingCartIcon />}
-            >
-              Add to cart
-            </Button>
-            <Button
-              variant="outlined"
-              color="secondary"
-              sx={{ width: 40, height: 40, borderRadius: 0 }}
-            >
-              <Checkbox
-                icon={<FavoriteBorderIcon />}
-                checkedIcon={<FavoriteIcon />}
-                sx={{
-                  color: "red",
-                  "&.Mui-checked": {
+              <Button
+                variant="outlined"
+                color="secondary"
+                sx={{ width: 40, height: 40, borderRadius: 0, fontSize: 30 }}
+              >
+                +
+              </Button>
+            </Stack>
+            <Box>
+              <Button
+                variant="contained"
+                color="secondary"
+                sx={{ width: 160, height: 40, borderRadius: 0, m: "0 0.5rem" }}
+                startIcon={<ShoppingCartIcon />}
+              >
+                Add to cart
+              </Button>
+              <Button
+                variant="outlined"
+                color="secondary"
+                sx={{ width: 40, height: 40, borderRadius: 0 }}
+              >
+                <Checkbox
+                  icon={<FavoriteBorderIcon />}
+                  checkedIcon={<FavoriteIcon />}
+                  sx={{
                     color: "red",
-                  },
-                  "& .MuiSvgIcon-root": { fontSize: 35 },
-                }}
-              />
-            </Button>
+                    "&.Mui-checked": {
+                      color: "red",
+                    },
+                    "& .MuiSvgIcon-root": { fontSize: 35 },
+                  }}
+                />
+              </Button>
+            </Box>
           </Stack>
         </Box>
       </Stack>
