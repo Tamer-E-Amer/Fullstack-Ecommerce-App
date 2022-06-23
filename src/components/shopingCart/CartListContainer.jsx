@@ -21,9 +21,10 @@ import { colors } from "../../themes/theme";
 
 // react reveal
 import { Slide } from "react-awesome-reveal";
+import Announcment from "./Announcment";
 const CartListContainer = () => {
-   // show coupon state
-   const [showCoupon, setShowCoupon] = React.useState(false)
+  // show coupon state
+  const [showCoupon, setShowCoupon] = React.useState(false);
   const cartCards = [1, 2, 3].map((card, index) => (
     <CartLListCard key={index} />
   ));
@@ -66,19 +67,28 @@ const CartListContainer = () => {
 
       {/* Coupon section */}
       <FormGroup>
-        <FormControlLabel control={<Checkbox onClick={()=>{setShowCoupon(!showCoupon)}}/>} label="I have a coupon"  />
+        <FormControlLabel
+          control={
+            <Checkbox
+              onClick={() => {
+                setShowCoupon(!showCoupon);
+              }}
+            />
+          }
+          label="I have a coupon"
+        />
       </FormGroup>
-      {showCoupon && 
-      <Slide direction="left">
+      {showCoupon && (
+        <Slide direction="left">
+          <CouponForm />
+        </Slide>
+      )}
 
-        <CouponForm/>
-      </Slide>
-      
-      }
-      
       {/* Action buttons */}
 
-    <ContinueOrCheckOut/>
+      <ContinueOrCheckOut />
+      {/* announcement component */}
+      <Announcment />
     </>
   );
 };
