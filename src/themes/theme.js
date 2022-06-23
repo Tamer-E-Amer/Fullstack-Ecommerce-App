@@ -11,6 +11,7 @@ export const colors = {
   dark_grey: "#262626",
   mid_gray: "#8F8E8E",
   light_gray: "#C5C5C5",
+  light_gray_bg:"#F2F2F2"
 };
 export const theme = createTheme({
   palette: {
