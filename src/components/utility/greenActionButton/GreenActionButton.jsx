@@ -20,7 +20,7 @@ const GreenActionButton = ({ label, width, height, icon }) => {
           height: height,
           borderRadius: 0,
           textTransform: "none",
-          margin: "0.5rem 0",
+          margin: "1rem 0",
         }}
         startIcon={icon}
       >

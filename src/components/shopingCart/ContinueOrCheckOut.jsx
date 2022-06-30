@@ -29,8 +29,8 @@ const ContinueOrCheckOut = () => {
         mb={2}
       >
           <Stack alignItems="center" justifyContent="center" spacing={2} direction={{xs:"column", md:"row"}}>
-              <Button variant="contained" color="secondary" sx={{width:315, height:50, borderRadius:0, textTransform:"none"}} startIcon={<ShoppingCartIcon/>}>Continue Shopping</Button>
-              <Button variant="contained" color="secondary" sx={{width:315, height:50, borderRadius:0, textTransform:"none"}} startIcon={<CreditCardIcon/>}>Scheck out</Button>
+              <Button variant="outlined" color="secondary" sx={{width:300, height:50, borderRadius:0, textTransform:"none"}} startIcon={<ShoppingCartIcon/>}>Continue Shopping</Button>
+              <Button variant="contained" color="secondary" sx={{width:300, height:50, borderRadius:0, textTransform:"none"}} startIcon={<CreditCardIcon/>}>Scheck out</Button>
           
           </Stack>
 

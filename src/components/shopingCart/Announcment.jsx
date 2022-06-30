@@ -25,8 +25,9 @@ const Announcment = () => {
         bgcolor={colors.light_gray_bg}
         color={colors.dark_grey}
         flexDirection="column"
+        p={2}
       >
-        <Typography variant="h5" component={"P"}>
+        <Typography variant="h5" sx={{ fontSize: 20 }}>
           Your first order will be delivered for free
         </Typography>
 
@@ -41,7 +42,7 @@ const Announcment = () => {
         </Typography>
         <GreenActionButton
           label="Continue shopping"
-          width="90%"
+          width="60%"
           height="50px"
           icon={<ShoppingCartIcon />}
         />

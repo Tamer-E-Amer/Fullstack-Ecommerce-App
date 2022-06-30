@@ -45,7 +45,7 @@ const FooterSubscribeSection = () => {
           Subscribe
         </Button>
         <Typography
-          varinat="body2"
+          variant="body2"
           style={{ color: "#C5C5C5", margin: "1rem 0" }}
         >
           Subscribe to our Newsletter to receive early discount offers, latest

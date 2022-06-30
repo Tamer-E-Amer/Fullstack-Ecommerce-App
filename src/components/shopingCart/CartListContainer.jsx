@@ -8,23 +8,18 @@ import {
   Box,
   Stack,
   Typography,
-  Checkbox,
-  FormGroup,
-  FormControlLabel,
 } from "@mui/material";
 // app components
 import CartLListCard from "./CartLListCard";
-import CouponForm from "./CouponForm";
-import ContinueOrCheckOut from "./ContinueOrCheckOut";
+
+
 // colors and themes
 import { colors } from "../../themes/theme";
 
-// react reveal
-import { Slide } from "react-awesome-reveal";
-import Announcment from "./Announcment";
+
+
 const CartListContainer = () => {
-  // show coupon state
-  const [showCoupon, setShowCoupon] = React.useState(false);
+ 
   const cartCards = [1, 2, 3].map((card, index) => (
     <CartLListCard key={index} />
   ));
@@ -65,30 +60,9 @@ const CartListContainer = () => {
         </Typography>
       </Box>
 
-      {/* Coupon section */}
-      <FormGroup>
-        <FormControlLabel
-          control={
-            <Checkbox
-              onClick={() => {
-                setShowCoupon(!showCoupon);
-              }}
-            />
-          }
-          label="I have a coupon"
-        />
-      </FormGroup>
-      {showCoupon && (
-        <Slide direction="left">
-          <CouponForm />
-        </Slide>
-      )}
+      
 
-      {/* Action buttons */}
-
-      <ContinueOrCheckOut />
-      {/* announcement component */}
-      <Announcment />
+    
     </>
   );
 };

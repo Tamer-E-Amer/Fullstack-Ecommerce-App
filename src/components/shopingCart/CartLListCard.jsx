@@ -43,7 +43,7 @@ const CartLListCard = () => {
         >
           {/* image */}
           <Grid item xs={12} sm={3} md={3}>
-            <Box width={{ xs: 120, md: 210 }} height={{ xs: 120, md: 210 }}>
+            <Box width={{ xs: 120, md: 160 }} height={{ xs: 120, md: 160 }}>
               <img
                 src={mango}
                 alt="product image"
@@ -55,8 +55,8 @@ const CartLListCard = () => {
             </Box>
           </Grid>
           {/* description */}
-          <Grid item xs={12} sm={9} md={6}>
-            <Stack spacing={2}>
+          <Grid item xs={12} sm={9} md={7} >
+            <Stack spacing={2} alignItems="flex-start" justifyContent="center" pl={2}>
               {/* title */}
               <Typography variant="h5" color={colors.dark_grey}>
                 Mamngo alphonsos
@@ -83,7 +83,7 @@ const CartLListCard = () => {
               </Stack>
               {/* quantity */}
               <Box display="flex" flexDirection="row" alignItems={"center"}>
-                <Typography variant="h5">Quantity</Typography>
+                <Typography variant="h5" fontSize={18}>Quantity</Typography>
                 <Box
                   sx={{
                     border: `1px solid${colors.light_gray}`,
@@ -109,7 +109,7 @@ const CartLListCard = () => {
             </Stack>
           </Grid>
           {/* price and delete */}
-          <Grid item xs={12} sm={12} md={3}>
+          <Grid item xs={12} sm={12} md={2}>
             <Stack
               spacing={{ xs: 1, md: 10 }}
               alignItems="center"

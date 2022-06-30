@@ -35,7 +35,7 @@ const FooterUsefulLinks = () => {
         }}
         key={link.id}
       >
-        <ArrowForwardIosIcon />
+        <ArrowForwardIosIcon sx={{ fontSize: 14 }} />
         <Typography variant="body2">{link.linkTitle}</Typography>
       </Stack>
     );
