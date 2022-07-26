@@ -19,12 +19,14 @@ const NavbarActions = () => {
       spacing={2}
     >
       {/* shopping car */}
-      <Badge badgeContent={2} color="error">
-        <ShoppingCartCheckoutIcon
-          fontSize="large"
-          sx={{ color: `${colors.mid_gray}` }}
-        />
-      </Badge>
+      <Link to="/cart">
+        <Badge badgeContent={2} color="error">
+          <ShoppingCartCheckoutIcon
+            fontSize="large"
+            sx={{ color: `${colors.mid_gray}` }}
+          />
+        </Badge>
+      </Link>
       {/* login */}
       <Link to="/login" style={{ textDecoration: "none" }}>
         <Typography color={colors.mid_gray} sx={{ cursor: "pointer" }}>

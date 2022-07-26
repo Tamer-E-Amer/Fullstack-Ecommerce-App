@@ -27,11 +27,11 @@ const Announcment = () => {
         flexDirection="column"
         p={2}
       >
-        <Typography variant="h5" sx={{ fontSize: 20 }}>
+        <Typography variant="h5" sx={{ fontSize: 18 }}>
           Your first order will be delivered for free
         </Typography>
 
-        <Typography variant="h6">
+        <Typography variant="h6" sx={{ marginTop: "1rem" }}>
           For more Information click{" "}
           <Link
             to=""
@@ -40,12 +40,14 @@ const Announcment = () => {
             here
           </Link>
         </Typography>
-        <GreenActionButton
-          label="Continue shopping"
-          width="60%"
-          height="50px"
-          icon={<ShoppingCartIcon />}
-        />
+        <Link to="/allproducts" style={{textDecoration:"none"}}>
+          <GreenActionButton
+            label="Continue shopping"
+            width="250px"
+            height="50px"
+            icon={<ShoppingCartIcon />}
+          />
+        </Link>
       </Box>
     </>
   );

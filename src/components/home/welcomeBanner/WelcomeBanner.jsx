@@ -19,6 +19,8 @@ import {
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 // images
 import bannerImg from "../../../assets/imgs/banner-fruits.png";
+// react router dom
+import { Link } from "react-router-dom";
 const WelcomeBanner = () => {
   return (
     <Container>
@@ -39,13 +41,15 @@ const WelcomeBanner = () => {
             different fresh categoriesYou can choose from very
           </WelcomeBannerText>
           {/* ShopButton */}
-          <ShopButton
-            variant="contained"
-            color="secondary"
-            startIcon={<ShoppingCartIcon />}
-          >
-            Shop now
-          </ShopButton>
+          <Link to="/allproducts" style={{textDecoration:"none"}}>
+            <ShopButton
+              variant="contained"
+              color="secondary"
+              startIcon={<ShoppingCartIcon />}
+            >
+              Shop now
+            </ShopButton>
+          </Link>
         </WelcomeBannerTextWrapper>
         {/* welcome immage image */}
         <WelcomeBannerImg src={bannerImg} />

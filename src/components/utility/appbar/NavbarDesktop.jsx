@@ -18,6 +18,8 @@ import SearchIcon from "@mui/icons-material/Search";
 
 // imgs
 import logo from "../../../assets/imgs/logo.png";
+// router dom
+import {Link} from 'react-router-dom'
 const NavbarDesktop = () => {
   return (
     <>
@@ -29,7 +31,9 @@ const NavbarDesktop = () => {
             direction={"row"}
           >
             {/* logo */}
+            <Link to="/">
             <img src={logo} />
+            </Link>
             {/*  search */}
             <SearchInputWrapper>
               <SearchInput type="search" />

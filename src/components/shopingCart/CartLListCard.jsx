@@ -3,15 +3,9 @@
  */
 
 import React from "react";
-import {
-  Paper,
-  Grid,
-  Stack,
-  Typography,
-  Box,
-  TextField,
-  IconButton,
-} from "@mui/material";
+import { Paper, Grid, Stack, Typography, Box, IconButton } from "@mui/material";
+// react router dom
+import { Link } from "react-router-dom";
 // colors anf themes
 import { colors } from "../../themes/theme";
 // icons
@@ -20,6 +14,8 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import StarIcon from "@mui/icons-material/Star";
 // imgs
 import mango from "../../assets/imgs/mango.png";
+// css
+import "../../app.css";
 const CartLListCard = () => {
   return (
     <>
@@ -43,24 +39,40 @@ const CartLListCard = () => {
         >
           {/* image */}
           <Grid item xs={12} sm={3} md={3}>
-            <Box width={{ xs: 120, md: 160 }} height={{ xs: 120, md: 160 }}>
-              <img
-                src={mango}
-                alt="product image"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                }}
-              />
-            </Box>
+            <Link to="/productDetails/11111111111">
+              <Box width={{ xs: 120, md: 160 }} height={{ xs: 120, md: 160 }}>
+                <img
+                  src={mango}
+                  alt="product image"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
+              </Box>
+            </Link>
           </Grid>
           {/* description */}
-          <Grid item xs={12} sm={9} md={7} >
-            <Stack spacing={2} alignItems="flex-start" justifyContent="center" pl={2}>
+          <Grid item xs={12} sm={9} md={7}>
+            <Stack
+              spacing={2}
+              alignItems="flex-start"
+              justifyContent="center"
+              pl={2}
+            >
               {/* title */}
-              <Typography variant="h5" color={colors.dark_grey}>
-                Mamngo alphonsos
-              </Typography>
+              <Link
+                to="/productDetails/1111111"
+                style={{ textDecoration: "none" }}
+              >
+                <Typography
+                  variant="h5"
+                  color={colors.dark_grey}
+                  sx={{ "&:hover": { color: colors.green } }}
+                >
+                  Mamngo alphonsos
+                </Typography>
+              </Link>
               {/* category */}
               <Typography
                 variant="h5"
@@ -83,7 +95,9 @@ const CartLListCard = () => {
               </Stack>
               {/* quantity */}
               <Box display="flex" flexDirection="row" alignItems={"center"}>
-                <Typography variant="h5" fontSize={18}>Quantity</Typography>
+                <Typography variant="h5" fontSize={18}>
+                  Quantity
+                </Typography>
                 <Box
                   sx={{
                     border: `1px solid${colors.light_gray}`,

@@ -43,7 +43,7 @@ const ProductCard = (props) => {
       </ProductCardDetails>
       <ProductCardImg
         src={props.productData.productPicture}
-        className="cardImg"
+        className="cardImg" //to be set in the styled component file
       />
     </ProductCardWrapper>
   );
