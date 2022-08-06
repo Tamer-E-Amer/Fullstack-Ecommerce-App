@@ -1,30 +1,30 @@
 /**
- * @description Login Form Container
+ * @description form container for each admin function such as change password, update profile , add category and so on
+ * @param {string}  : title
+ * @param {string}  : image
  */
 
 import React from "react";
 // mui components
 import { Box, Container, Stack } from "@mui/material";
 // color theme
-import { colors } from "../../../themes/theme";
-// images
-import loginIllustration from "../../../assets/imgs/loginIllustration.png";
-import LoginForm from "./LoginForm";
-const LoginFormContainer = () => {
+import { colors } from "../../../../themes/theme";
+
+const AdminFormsContainer = ({ title, img, form }) => {
   return (
-    <Container>
+    <div>
       <Box
         sx={{
           width: "80%",
           height: "auto",
           borderRadius: "40px",
-          margin: "50px auto",
+          margin: "0 auto",
           padding: "110px 1rem 1rem 1rem",
           border: `0.5px solid ${colors.light_gray} `,
           position: "relative",
           display: "flex",
         }}
-        alignItems="center"
+        alignItems="left"
         justifyContent="center"
       >
         {/* header green box */}
@@ -32,22 +32,22 @@ const LoginFormContainer = () => {
           sx={{
             position: "absolute",
             width: "100%",
-            height: 70,
+            height: 50,
             borderRadius: "40px 40px 0 0 ",
             top: 0,
             left: 0,
-            backgroundColor: colors.green,
+            backgroundColor: colors.mid_gray,
             display: "flex",
             color: "#fff",
-            fontSize: 25,
+            fontSize: 20,
             fontWeight: 500,
           }}
           alignItems="center"
           justifyContent="center"
         >
-          Egymarket Login
+          {title}
         </Box>
-        {/* image and login form container */}
+        {/* image and form container */}
         <Stack
           direction={{ xs: "column", md: "row" }}
           spacing={{ xs: 2, md: 8 }}
@@ -57,16 +57,13 @@ const LoginFormContainer = () => {
           justifyContent="center"
         >
           <Box>
-            <img
-              src={loginIllustration}
-              style={{ width: "100%", height: "auto" }}
-            />
+            <img src={img} style={{ width: "100%", height: "auto" }} />
           </Box>
-          <LoginForm />
+          {form}
         </Stack>
       </Box>
-    </Container>
+    </div>
   );
 };
 
-export default LoginFormContainer;
+export default AdminFormsContainer;

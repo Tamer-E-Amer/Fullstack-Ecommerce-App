@@ -12,6 +12,8 @@ import {
   AllProducts,
   ProductDetails,
   ShopingCart,
+  // admin pages
+  ChangePassword,
 } from "./pages";
 //css
 import "./app.css";
@@ -30,6 +32,8 @@ const App = () => {
           <Route path="/allproducts" element={<AllProducts />} />
           <Route path="/productDetails/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<ShopingCart />} />
+          {/* admin routers */}
+          <Route path="/admin/profile/changePassword/:userId" element={<ChangePassword/>}/>
         </Routes>
       </Router>
     </div>

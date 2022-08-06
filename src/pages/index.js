@@ -8,3 +8,5 @@ export { default as Register } from "./register/Register";
 export { default as AllProducts } from "./allProducts/AllProducts";
 export { default as ProductDetails } from "./productDetails/ProductDetails";
 export { default as ShopingCart } from "./shopingCart/ShopingCart";
+// admin pages
+export {default as ChangePassword} from "./admin/changePassword/ChangePassword";
