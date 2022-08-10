@@ -10,3 +10,4 @@ export { default as ProductDetails } from "./productDetails/ProductDetails";
 export { default as ShopingCart } from "./shopingCart/ShopingCart";
 // admin pages
 export {default as ChangePassword} from "./admin/changePassword/ChangePassword";
+export {default as UpdateProfile} from "./admin/updateProfile/UpdateProfile";

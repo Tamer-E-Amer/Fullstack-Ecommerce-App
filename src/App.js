@@ -14,6 +14,7 @@ import {
   ShopingCart,
   // admin pages
   ChangePassword,
+  UpdateProfile
 } from "./pages";
 //css
 import "./app.css";
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/cart" element={<ShopingCart />} />
           {/* admin routers */}
           <Route path="/admin/profile/changePassword/:userId" element={<ChangePassword/>}/>
+          <Route path="/admin/profile/updatemyprofile/:userId" element={<UpdateProfile/>}/>
         </Routes>
       </Router>
     </div>

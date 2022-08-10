@@ -6,16 +6,16 @@
 
 import React from "react";
 // mui components
-import { Box, Container, Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 // color theme
 import { colors } from "../../../../themes/theme";
 
 const AdminFormsContainer = ({ title, img, form }) => {
   return (
-    <div>
+    <>
       <Box
         sx={{
-          width: "80%",
+          width: "100%",
           height: "auto",
           borderRadius: "40px",
           margin: "0 auto",
@@ -27,12 +27,12 @@ const AdminFormsContainer = ({ title, img, form }) => {
         alignItems="left"
         justifyContent="center"
       >
-        {/* header green box */}
+        {/* Box title*/}
         <Box
           sx={{
             position: "absolute",
             width: "100%",
-            height: 50,
+            height: 48,
             borderRadius: "40px 40px 0 0 ",
             top: 0,
             left: 0,
@@ -62,7 +62,7 @@ const AdminFormsContainer = ({ title, img, form }) => {
           {form}
         </Stack>
       </Box>
-    </div>
+    </>
   );
 };
 
