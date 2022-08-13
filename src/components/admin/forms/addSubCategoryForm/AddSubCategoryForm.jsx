@@ -20,13 +20,21 @@ import CategoryIcon from "@mui/icons-material/Category";
 import PhotoCamera from "@mui/icons-material/PhotoCamera";
 // colors
 import { colors } from "../../../../themes/theme";
-
+// categories
+import { categoryData } from "../../../../data/category.js";
 const AddSubCategoryForm = () => {
   // category name state
   const [catName, setCatName] = React.useState(0);
   const handleCatNameChange = (event) => {
     setCatName(event.target.value);
   };
+  // console.log(categoryData);
+  //  looping through categories
+  const catList = categoryData.map((cat) => (
+    <MenuItem value={cat.id} key={cat.id}>
+      {cat.title}
+    </MenuItem>
+  ));
   return (
     <>
       <Stack sx={{ width: "100%" }} spacing={1}>
@@ -51,10 +59,8 @@ const AddSubCategoryForm = () => {
             }}
           >
             <MenuItem value={0}>Select Category Name</MenuItem>
-            <MenuItem value={1}>Category 1</MenuItem>
-            <MenuItem value={2}>Category 2</MenuItem>
-            <MenuItem value={3}>Category 3</MenuItem>
-            <MenuItem value={4}>Category 4</MenuItem>
+
+            {catList}
           </Select>
         </FormControl>
 

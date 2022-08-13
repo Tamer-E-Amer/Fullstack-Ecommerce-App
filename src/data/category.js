@@ -23,7 +23,7 @@ export const categoryData = [
   },
   {
     id: 4,
-    title: "Nuts",
+    title: "Milk products",
     img: category3,
   },
 ];
