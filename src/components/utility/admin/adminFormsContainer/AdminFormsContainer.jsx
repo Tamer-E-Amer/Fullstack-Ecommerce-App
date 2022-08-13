@@ -6,7 +6,7 @@
 
 import React from "react";
 // mui components
-import { Box, Stack } from "@mui/material";
+import { Box, Container, Stack } from "@mui/material";
 // color theme
 import { colors } from "../../../../themes/theme";
 
@@ -27,7 +27,7 @@ const AdminFormsContainer = ({ title, img, form }) => {
         alignItems="left"
         justifyContent="center"
       >
-        {/* Box title*/}
+        {/* Box title */}
         <Box
           sx={{
             position: "absolute",
