@@ -1,17 +1,32 @@
 /**
- * @description Add product category form in admin system
+ * @description Add subCategory form in admin system
  */
 
 import React from "react";
 // mui components
-import { Stack, Typography, Box, Button,IconButton } from "@mui/material";
+import {
+  Stack,
+  Typography,
+  Box,
+  Button,
+  IconButton,
+  MenuItem,
+  FormControl,
+  Select,
+} from "@mui/material";
 // icons
 import SaveIcon from "@mui/icons-material/Save";
 import CategoryIcon from "@mui/icons-material/Category";
 import PhotoCamera from "@mui/icons-material/PhotoCamera";
 // colors
 import { colors } from "../../../../themes/theme";
-const AddCategoryForm = () => {
+
+const AddSubCategoryForm = () => {
+  // category name state
+  const [catName, setCatName] = React.useState(0);
+  const handleCatNameChange = (event) => {
+    setCatName(event.target.value);
+  };
   return (
     <>
       <Stack sx={{ width: "100%" }} spacing={1}>
@@ -19,9 +34,31 @@ const AddCategoryForm = () => {
           variant="h6"
           sx={{ fontSize: 18, fontWeight: 400, color: colors.dark_grey }}
         >
-          Add category to your market
+          Add sub category to your market
         </Typography>
-        {/* Category name */}
+        {/* category name */}
+        <FormControl fullWidth>
+          <Select
+            name="catName"
+            value={catName}
+            onChange={handleCatNameChange}
+            SelectDisplayProps={{
+              style: { paddingTop: 3, paddingBottom: 3 },
+            }}
+            sx={{
+              height: "40px",
+              borderRadius: 0,
+            }}
+          >
+            <MenuItem value={0}>Select Category Name</MenuItem>
+            <MenuItem value={1}>Category 1</MenuItem>
+            <MenuItem value={2}>Category 2</MenuItem>
+            <MenuItem value={3}>Category 3</MenuItem>
+            <MenuItem value={4}>Category 4</MenuItem>
+          </Select>
+        </FormControl>
+
+        {/* sub category name */}
         <Box
           display="flex"
           alignItems="center"
@@ -31,7 +68,7 @@ const AddCategoryForm = () => {
           <CategoryIcon sx={{ color: `${colors.mid_gray}` }} />
           <input
             type="text"
-            placeholder="Category name"
+            placeholder="Subcategory name"
             style={{
               outline: "none",
               border: "none",
@@ -83,4 +120,4 @@ const AddCategoryForm = () => {
   );
 };
 
-export default AddCategoryForm;
+export default AddSubCategoryForm;
