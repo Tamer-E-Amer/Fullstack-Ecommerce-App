@@ -52,8 +52,8 @@ const AdminFormsContainer = ({ title, img, form }) => {
           direction={{ xs: "column", md: "row" }}
           spacing={{ xs: 2, md: 8 }}
           sx={{ width: "90%" }}
-          p={2}
-          alignItems="center"
+          px={2}
+          alignItems="flex-start"
           justifyContent="center"
         >
           <Box>

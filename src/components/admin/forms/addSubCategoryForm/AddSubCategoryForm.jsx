@@ -28,7 +28,6 @@ const AddSubCategoryForm = () => {
   const handleCatNameChange = (event) => {
     setCatName(event.target.value);
   };
-  // console.log(categoryData);
   //  looping through categories
   const catList = categoryData.map((cat) => (
     <MenuItem value={cat.id} key={cat.id}>

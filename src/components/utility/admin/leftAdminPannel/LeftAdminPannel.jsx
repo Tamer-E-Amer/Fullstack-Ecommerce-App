@@ -201,6 +201,8 @@ const LeftAdminPannel = () => {
                 </Typography>
               </Box>
             </Link>
+            <Link to="/admin/products/addProduct" style={{textDecoration:"none"}}>
+            
             <Box
               display="flex"
               alignItems="center"
@@ -219,6 +221,7 @@ const LeftAdminPannel = () => {
                 Add Product
               </Typography>
             </Box>
+            </Link>
           </Stack>
         </Collapse>
         {/* Management */}
