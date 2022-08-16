@@ -17,7 +17,8 @@ import {
   UpdateProfile,
   AddCategory,
   AddSubCategory,
-  AddProduct
+  AddProduct,
+  AddBrand,
 } from "./pages";
 //css
 import "./app.css";
@@ -37,12 +38,24 @@ const App = () => {
           <Route path="/productDetails/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<ShopingCart />} />
           {/* admin routers */}
-          <Route path="/admin/profile/changePassword/:userId" element={<ChangePassword/>}/>
-          <Route path="/admin/profile/updatemyprofile/:userId" element={<UpdateProfile/>}/>
-          <Route path="/admin/products/addCategory/" element={<AddCategory/>}/>
-          <Route path="/admin/products/addSubCategory/" element={<AddSubCategory/>}/>
-          <Route path="/admin/products/addProduct/" element={<AddProduct/>}/>
-
+          <Route
+            path="/admin/profile/changePassword/:userId"
+            element={<ChangePassword />}
+          />
+          <Route
+            path="/admin/profile/updatemyprofile/:userId"
+            element={<UpdateProfile />}
+          />
+          <Route
+            path="/admin/products/addCategory/"
+            element={<AddCategory />}
+          />
+          <Route
+            path="/admin/products/addSubCategory/"
+            element={<AddSubCategory />}
+          />
+          <Route path="/admin/products/addProduct/" element={<AddProduct />} />
+          <Route path="/admin/products/addBrand" element={<AddBrand />} />
         </Routes>
       </Router>
     </div>

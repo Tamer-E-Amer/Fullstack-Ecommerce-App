@@ -201,26 +201,53 @@ const LeftAdminPannel = () => {
                 </Typography>
               </Box>
             </Link>
-            <Link to="/admin/products/addProduct" style={{textDecoration:"none"}}>
-            
-            <Box
-              display="flex"
-              alignItems="center"
-              justifyContent="left"
-              color={colors.dark_grey}
-              sx={{
-                "&:hover": {
-                  cursor: "pointer",
-                  textDecoration: "underline",
-                  color: colors.green,
-                },
-              }}
+            <Link
+              to="/admin/products/addProduct"
+              style={{ textDecoration: "none" }}
             >
-              <ArrowForwardIosIcon sx={{ fontSize: 14 }} />
-              <Typography variant="body2" mx={1}>
-                Add Product
-              </Typography>
-            </Box>
+              <Box
+                display="flex"
+                alignItems="center"
+                justifyContent="left"
+                color={colors.dark_grey}
+                sx={{
+                  "&:hover": {
+                    cursor: "pointer",
+                    textDecoration: "underline",
+                    color: colors.green,
+                  },
+                }}
+              >
+                <ArrowForwardIosIcon sx={{ fontSize: 14 }} />
+                <Typography variant="body2" mx={1}>
+                  Add Product
+                </Typography>
+              </Box>
+            </Link>
+
+            {/* add brands */}
+            <Link
+              to="/admin/products/addBrand"
+              style={{ textDecoration: "none" }}
+            >
+              <Box
+                display="flex"
+                alignItems="center"
+                justifyContent="left"
+                color={colors.dark_grey}
+                sx={{
+                  "&:hover": {
+                    cursor: "pointer",
+                    textDecoration: "underline",
+                    color: colors.green,
+                  },
+                }}
+              >
+                <ArrowForwardIosIcon sx={{ fontSize: 14 }} />
+                <Typography variant="body2" mx={1}>
+                  Add brand
+                </Typography>
+              </Box>
             </Link>
           </Stack>
         </Collapse>
